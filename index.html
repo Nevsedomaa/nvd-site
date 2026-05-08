@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Не все дома — официальный сайт</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo" aria-label="На главную">
+                <img src="assets/images/logo.png" alt="Не все дома">
+            </a>
+
+            <nav class="header__nav">
+                <a href="index.html">Главная</a>
+                <a href="releases.html">Релизы</a>
+                <a href="lyrics.html">Тексты</a>
+                <a href="merch.html">Мерч</a>
+                <a href="concerts.html">Концерты</a>
+                <a href="about.html">О группе</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+
+            <button class="burger" type="button" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero__bg"></div>
+            <div class="hero__overlay"></div>
+
+            <div class="hero__content">
+                <h1 data-reveal>Не все дома</h1>
+
+                <p data-reveal>
+                    Музыка весенних полей, теплых труб<br>
+                    и холодной осени
+                </p>
+
+                <div class="hero__buttons" data-reveal>
+                    <a href="#tracks" class="btn btn--primary">Слушать</a>
+                    <a href="releases.html" class="btn btn--outline">Релизы</a>
+                </div>
+            </div>
+
+            <a href="#album" class="hero__arrow" aria-label="Перейти ниже">↓</a>
+        </section>
+
+        <section class="album section section--dark" id="album">
+            <div class="container album__inner">
+                <div class="album__cover-wrap" data-reveal>
+                    <img src="assets/images/album-mestoimenie.jpg" alt="Обложка альбома Местоимение" class="album__cover">
+                </div>
+
+                <div class="album__content" data-reveal>
+                    <span class="section-label">Новый альбом</span>
+
+                    <h2>Местоимение</h2>
+
+                    <span class="album__year">2026</span>
+
+                    <p>
+                        Альбом «Местоимение» — это история<br>
+                        о побеге из холодной повседневности<br>
+                        в тепло летнего дня на лёгком ветру.
+                    </p>
+
+                    <div class="music-links">
+                        <a href="https://music.yandex.ru/album/38341786?utm_source=web&amp;utm_medium=copy_link" target="_blank" rel="noopener">Яндекс Музыка</a>
+                        <a href="https://vk.com/music/playlist/190062921_81608684_b1824581597307c637" target="_blank" rel="noopener">VK Music</a>
+                        <a href="https://zvuk.com/track/159831797" target="_blank" rel="noopener">Звук</a>
+                    </div>
+
+                    <button class="btn btn--primary audio-btn" type="button" data-audio="assets/audio/mestoimenie-otr.mp3">
+                        ▶ Слушать отрывок
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="tracks section section--gray" id="tracks">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2>Треки</h2>
+
+                    <p>
+                        Прослушайте отрывки из наших композиций. Каждая песня —
+                        это история о поиске себя между городом и мечтой.
+                    </p>
+                </div>
+
+                <div class="tracks-grid">
+                    <article class="track-card" data-reveal>
+                        <img src="assets/images/track-sledy.jpg" alt="Следы" draggable="false">
+
+                        <div class="track-card__body">
+                            <h3>Следы</h3>
+                            <p class="track-card__desc">
+                                <span class="track-card__desc-short">Через глубокий снег и&nbsp;завесу...</span>
+                                <span class="track-card__desc-full">Через глубокий снег и&nbsp;завесу метели мы&nbsp;держим путь к&nbsp;тёплому лету</span>
+                            </p>
+
+                            <div class="track-card__actions">
+                                <button class="track-card__play audio-btn" type="button" data-audio="assets/audio/sledy-otr.mp3">
+                                    ▶ Слушать
+                                </button>
+
+                                <a href="https://band.link/0EXUB" class="track-card__link" target="_blank" rel="noopener" aria-label="Открыть Следы на площадках">
+                                    <img src="assets/images/ikon-ssilka.png" alt="" draggable="false">
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="track-card" data-reveal>
+                        <img src="assets/images/track-dym.jpg" alt="Дым" draggable="false">
+
+                        <div class="track-card__body">
+                            <h3>Дым</h3>
+                            <p class="track-card__desc">
+                                <span class="track-card__desc-short">Наш хрупкий мир тает на&nbsp;глазах...</span>
+                                <span class="track-card__desc-full">Наш хрупкий мир тает на&nbsp;глазах, окутанный дымом несбывшегося</span>
+                            </p>
+
+                            <div class="track-card__actions">
+                                <button class="track-card__play audio-btn" type="button" data-audio="assets/audio/dym-otr.mp3">
+                                    ▶ Слушать
+                                </button>
+
+                                <a href="https://band.link/qgFjC" class="track-card__link" target="_blank" rel="noopener" aria-label="Открыть Дым на площадках">
+                                    <img src="assets/images/ikon-ssilka.png" alt="" draggable="false">
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="track-card" data-reveal>
+                        <img src="assets/images/track-october.jpg" alt="Октябрь" draggable="false">
+
+                        <div class="track-card__body">
+                            <h3>Октябрь</h3>
+                            <p class="track-card__desc">
+                                <span class="track-card__desc-short">Большой город встречает нас...</span>
+                                <span class="track-card__desc-full">Большой город встречает нас шумом машин, свистом ветров и&nbsp;болью расставания</span>
+                            </p>
+
+                            <div class="track-card__actions">
+                                <button class="track-card__play audio-btn" type="button" data-audio="assets/audio/oktyabr-otr.mp3">
+                                    ▶ Слушать
+                                </button>
+
+                                <a href="https://band.link/ybXqV" class="track-card__link" target="_blank" rel="noopener" aria-label="Открыть Октябрь на площадках">
+                                    <img src="assets/images/ikon-ssilka.png" alt="" draggable="false">
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="music-about" id="music-about">
+            <div class="music-about__bg"></div>
+            <div class="music-about__overlay"></div>
+
+            <div class="container music-about__content" data-reveal>
+                <h2>О музыке</h2>
+
+                <p>
+                    Мы пишем о том, что чувствуем каждый день: тревога больших городов,
+                    стены из бетона, метро без выхода, дым сигарет на мостах. Но также — о побеге.
+                </p>
+
+                <p>
+                    О море внутри, о траве под босыми ногами, о закатах в окне поезда,
+                    о ветре, который уносит всё лишнее.
+                </p>
+
+                <p>
+                    Наша музыка — это контраст. Холод и тепло. Город и природа.
+                    Тревога и свобода. Мы ищем баланс между тем, кто мы есть,
+                    и тем, кем хотим стать.
+                </p>
+
+                <p class="music-about__final">
+                    «Не все дома» — это не про отсутствие. Это про поиск.
+                </p>
+            </div>
+        </section>
+
+        <section class="releases section section--gray" id="releases">
+            <div class="container">
+                <div class="section-row" data-reveal>
+                    <div>
+                        <h2>Релизы</h2>
+                        <p>Дискография группы</p>
+                    </div>
+
+                    <a href="releases.html" class="more-link">Все релизы →</a>
+                </div>
+
+                <div class="release-grid">
+                    <article class="release-card" data-reveal>
+                        <a href="album.html?id=mestoimenie">
+                            <img src="assets/images/release-1.jpg" alt="Местоимение">
+                            <h3>Местоимение</h3>
+                            <p>Альбом 2025</p>
+                        </a>
+                    </article>
+
+                    <article class="release-card" data-reveal>
+                        <a href="album.html?id=sledy">
+                            <img src="assets/images/release-2.jpg" alt="Следы">
+                            <h3>Следы</h3>
+                            <p>EP 2025</p>
+                        </a>
+                    </article>
+
+                    <article class="release-card" data-reveal>
+                        <a href="album.html?id=teploenergetika-i-teplotehnika">
+                            <img src="assets/images/release-3.jpg" alt="Теплоэнергетика и...">
+                            <h3 class="release-card__moving-title">
+                                <span class="release-title-short">Теплоэнергетика и...</span>
+                                <span class="release-title-full">Теплоэнергетика и теплотехника</span>
+                            </h3>
+                            <p>Альбом 2024</p>
+                        </a>
+                    </article>
+
+                    <article class="release-card" data-reveal>
+                        <a href="album.html?id=zvezdnyy-dozhd">
+                            <img src="assets/images/release-4.jpg" alt="Звездный дождь">
+                            <h3>Звездный дождь</h3>
+                            <p>Альбом 2023</p>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="lyrics-preview section section--dark" id="lyrics-preview">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2>Строки</h2>
+
+                    <p>
+                        Фрагменты текстов, которые определяют нашу музыку
+                    </p>
+                </div>
+
+                <div class="lyrics-grid">
+                    <a href="lyric.html?id=teploenergetika-i-teplotehnika" class="lyrics-quote" data-reveal>
+                        “Но не заменить тепло рук<br>
+                        системами труб, давлением труб”
+                        <span>— Теплоэнергетика и теплотехника(2024)</span>
+                    </a>
+
+                    <a href="lyric.html?id=o-nas" class="lyrics-quote" data-reveal>
+                        “Нас будут вспоминать молчаливые стены”
+                        <span>— Звездный дождь(2023)</span>
+                    </a>
+
+                    <a href="lyric.html?id=utro-nastupit-vnov" class="lyrics-quote" data-reveal>
+                        “Пусть впереди еще целая жизнь,<br>
+                        постараться её нужно прожить”
+                        <span>— Теплоэнергетика и теплотехника(2024)</span>
+                    </a>
+
+                    <a href="lyric.html?id=obnimat-i-uteshat" class="lyrics-quote" data-reveal>
+                        “Тревожные мысли на фоне голых стен”
+                        <span>— Обнимать и утешать(2023)</span>
+                    </a>
+                </div>
+
+                <div class="center-link" data-reveal>
+                    <a href="lyrics.html">Все текста →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="diary section section--gray" id="diary">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2>Визуальный дневник</h2>
+
+                    <p>
+                        Моменты между городом и свободой
+                    </p>
+                </div>
+
+                <div class="diary-grid">
+                    <figure class="diary-grid__item diary-grid__item--top-left" data-reveal>
+                        <img src="assets/images/diary-1.jpg" alt="Поле">
+                    </figure>
+
+                    <figure class="diary-grid__item diary-grid__item--top-right" data-reveal>
+                        <img src="assets/images/diary-2.jpg" alt="Промзона">
+                    </figure>
+
+                    <figure class="diary-grid__item diary-grid__item--small-1" data-reveal>
+                        <img src="assets/images/diary-3.jpg" alt="Дорога">
+                    </figure>
+
+                    <figure class="diary-grid__item diary-grid__item--small-2" data-reveal>
+                        <img src="assets/images/diary-4.jpg" alt="Трубы">
+                    </figure>
+
+                    <figure class="diary-grid__item diary-grid__item--small-3" data-reveal>
+                        <img src="assets/images/diary-5.jpg" alt="Поле и город">
+                    </figure>
+
+                    <figure class="diary-grid__item diary-grid__item--bottom" data-reveal>
+                        <img src="assets/images/diary-6.jpg" alt="Закат">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="philosophy" id="about">
+            <div class="philosophy__bg"></div>
+            <div class="philosophy__overlay"></div>
+
+            <div class="container philosophy__content" data-reveal>
+                <h2>Философия группы</h2>
+
+                <p>
+                    Наш музыкальный проект — это, в первую очередь, деятельность,
+                    позволяющая нам выражать свои мысли и чувства, отдушина,
+                    в которой мы можем раскрыть свои мечты и переживания,
+                    отразив их в музыке.
+                </p>
+
+                <p>
+                    При написании песен мы избегаем таких тем, как политика и социальные явления,
+                    и концентрируемся на своих эмоциях, борьбе с самим собой,
+                    на психологическом восприятии жизни и личных отношениях между людьми.
+                </p>
+
+                <p>
+                    Каждый может увидеть в нашем творчестве частичку себя и своих мыслей,
+                    поэтому эти песни всегда найдут своих слушателей.
+                </p>
+
+                <p class="philosophy__final">
+                    «Не все дома» — это не про отсутствие. Это про поиск.
+                </p>
+            </div>
+        </section>
+
+        <section class="merch section section--gray" id="merch">
+            <div class="container">
+                <div class="section-row" data-reveal>
+                    <div>
+                        <h2>Мерч</h2>
+                        <p>Фрагменты текстов, которые определяют нашу музыку</p>
+                    </div>
+
+                    <a href="merch.html" class="more-link">Весь мерч →</a>
+                </div>
+
+                <div class="merch-grid">
+                    <article class="merch-card" data-reveal>
+                        <a href="merch.html" class="merch-card__image-link">
+                            <img src="assets/images/merch-1.jpg" alt="Футболка НВД">
+                        </a>
+
+                        <h3>Футболка “НВД”</h3>
+                        <p>2 000 ₽</p>
+
+                        <a href="merch.html" class="merch-card__order">↗ Заказать</a>
+                    </article>
+
+                    <article class="merch-card" data-reveal>
+                        <a href="merch.html" class="merch-card__image-link">
+                            <img src="assets/images/merch-2.jpg" alt="Местоимение">
+                        </a>
+
+                        <h3>Местоимение</h3>
+                        <p>2 000 ₽</p>
+
+                        <a href="merch.html" class="merch-card__order">↗ Заказать</a>
+                    </article>
+
+                    <article class="merch-card" data-reveal>
+                        <a href="merch.html" class="merch-card__image-link">
+                            <img src="assets/images/merch-3.jpg" alt="Местоимение">
+                        </a>
+
+                        <h3>Местоимение</h3>
+                        <p>2 000 ₽</p>
+
+                        <a href="merch.html" class="merch-card__order">↗ Заказать</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" id="contacts">
+        <div class="container footer__inner">
+            <div class="footer__brand">
+                <img src="assets/images/logo.png" alt="Не все дома">
+
+                <p>
+                    Русский инди-рок, пост-панк и альтернатива.
+                    Музыка о городе, тревоге и поиске свободы.
+                </p>
+            </div>
+
+            <div class="footer__col">
+                <h3>Навигация</h3>
+                <a href="releases.html">Релизы</a>
+                <a href="lyrics.html">Тексты</a>
+                <a href="concerts.html">Концерты</a>
+                <a href="merch.html">Мерч</a>
+            </div>
+
+            <div class="footer__col">
+                <h3>Связь</h3>
+                <a href="mailto:roomtv@yandex.ru">roomtv@yandex.ru</a>
+                <a href="https://vk.com/nooneathome" target="_blank" rel="noopener">VK</a>
+                <a href="https://t.me/+zwWmMEf_yt8xZGQy" target="_blank" rel="noopener">Telegram</a>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            © 2026 Не все дома
+        </div>
+    </footer>
+
+    <button class="scroll-top" type="button" aria-label="Наверх">
+        ↑
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

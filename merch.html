@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мерч - Не все дома</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/merch.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo" aria-label="На главную">
+                <img src="assets/images/logo.png" alt="Не все дома">
+            </a>
+
+            <nav class="header__nav">
+                <a href="index.html">Главная</a>
+                <a href="releases.html">Релизы</a>
+                <a href="lyrics.html">Тексты</a>
+                <a href="merch.html" class="is-active">Мерч</a>
+                <a href="concerts.html">Концерты</a>
+                <a href="about.html">О группе</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+
+            <button class="burger" type="button" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="merch-page">
+            <div class="container merch-page__container">
+                <div class="merch-page__head" data-reveal>
+                    <h1>Мерч</h1>
+                    <p>Одежда и аксессуары группы «Не все дома».</p>
+                </div>
+
+                <div class="merch-page__grid" data-merch-grid></div>
+            </div>
+        </section>
+    </main>
+
+    <div class="order-modal" data-order-modal hidden>
+        <div class="order-modal__overlay" data-order-close></div>
+
+        <section class="order-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="order-title">
+            <button class="order-modal__close" type="button" aria-label="Закрыть форму" data-order-close>×</button>
+
+            <h2 id="order-title">Оформить заказ</h2>
+
+            <div class="order-modal__product">
+                <h3 data-order-product-title></h3>
+                <p data-order-product-price></p>
+            </div>
+
+            <form class="order-form" data-order-form novalidate>
+                <input type="hidden" name="productId" data-order-product-id>
+                <input type="hidden" name="productTitle" data-order-product-name>
+
+                <label class="order-form__field">
+                    <span>Имя</span>
+                    <input type="text" name="name" placeholder="Ваше имя" autocomplete="name" data-order-name>
+                    <small data-error-for="name"></small>
+                </label>
+
+                <label class="order-form__field">
+                    <span>Контакт (Telegram или email)</span>
+                    <input type="text" name="contact" placeholder="@username или email" autocomplete="email" data-order-contact>
+                    <small data-error-for="contact"></small>
+                </label>
+
+                <label class="order-form__field" data-size-field>
+                    <span>Размер</span>
+                    <select name="size" data-order-size>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                    </select>
+                    <small data-error-for="size"></small>
+                </label>
+
+                <label class="order-form__field">
+                    <span>Комментарий (опционально)</span>
+                    <textarea name="comment" placeholder="Дополнительная информация" data-order-comment></textarea>
+                </label>
+
+                <label class="order-form__policy">
+                    <input type="checkbox" name="policy" data-order-policy>
+                    <span>
+                        Я согласен на обработку персональных данных согласно
+                        <a href="https://docs.google.com/document/d/1Bf9bgGJObNpFvOJVLz5JKxM2n8vBSazNMBWkBgDEefM/edit?pli=1&tab=t.0" target="_blank" rel="noopener">политике конфиденциальности</a>
+                    </span>
+                </label>
+                <small class="order-form__policy-error" data-error-for="policy"></small>
+
+                <p class="order-form__status" data-order-status role="status" aria-live="polite"></p>
+
+                <button class="order-form__submit" type="submit" data-order-submit>Отправить заявку</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer" id="contacts">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <img src="assets/images/logo.png" alt="Не все дома">
+
+                <p>
+                    Русский инди-рок, пост-панк и альтернатива.
+                    Музыка о городе, тревоге и поиске свободы.
+                </p>
+            </div>
+
+            <div class="footer__col">
+                <h3>Навигация</h3>
+                <a href="releases.html">Релизы</a>
+                <a href="lyrics.html">Тексты</a>
+                <a href="concerts.html">Концерты</a>
+                <a href="merch.html">Мерч</a>
+            </div>
+
+            <div class="footer__col footer__contacts">
+                <h3>Связь</h3>
+                <a href="mailto:roomtv@yandex.ru">roomtv@yandex.ru</a>
+
+                <div class="footer__socials">
+                    <a href="https://vk.com/nooneathome" target="_blank" rel="noopener">VK</a>
+                    <a href="https://t.me/+zwWmMEf_yt8xZGQy" target="_blank" rel="noopener">Telegram</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            © 2026 Не все дома
+        </div>
+    </footer>
+
+    <button class="scroll-top" type="button" aria-label="Наверх">
+        ↑
+    </button>
+
+    <script src="js/merch-data.js"></script>
+    <script src="js/order-config.js"></script>
+    <script src="js/merch-page.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

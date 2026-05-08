@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тексты песен - Не все дома</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lyrics.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__inner">
+            <a href="index.html" class="header__logo" aria-label="На главную">
+                <img src="assets/images/logo.png" alt="Не все дома">
+            </a>
+
+            <nav class="header__nav">
+                <a href="index.html">Главная</a>
+                <a href="releases.html">Релизы</a>
+                <a href="lyrics.html" class="is-active">Тексты</a>
+                <a href="merch.html">Мерч</a>
+                <a href="concerts.html">Концерты</a>
+                <a href="about.html">О группе</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+
+            <button class="burger" type="button" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="lyrics-page">
+            <div class="container lyrics-page__container">
+                <div class="lyrics-page__head" data-reveal>
+                    <h1>Тексты песен</h1>
+                    <p>Поэзия городской тревоги и летней свободы. Все тексты группы «Не все дома».</p>
+                </div>
+
+                <div class="lyrics-filters" data-reveal>
+                    <label class="lyrics-search">
+                        <span>Поиск</span>
+                        <span class="lyrics-search__field">
+                            <input type="search" placeholder="Название песни" data-lyrics-search>
+                            <button type="button" class="lyrics-search__clear" data-lyrics-clear aria-label="Очистить поиск">×</button>
+                        </span>
+                    </label>
+
+                    <label class="lyrics-filter">
+                        <span>Альбом</span>
+                        <select data-lyrics-album></select>
+                    </label>
+                </div>
+
+                <p class="lyrics-page__count" data-lyrics-count></p>
+                <div class="lyrics-list" data-lyrics-list></div>
+                <p class="lyrics-page__empty" data-lyrics-empty hidden>Ничего не найдено.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+        <div class="footer__inner">
+            <div class="footer__brand">
+                <img src="assets/images/logo.png" alt="Не все дома">
+
+                <p>
+                    Русский инди-рок, пост-панк и альтернатива.
+                    Музыка о городе, тревоге и поиске свободы.
+                </p>
+            </div>
+
+            <div class="footer__col">
+                <h3>Навигация</h3>
+                <a href="releases.html">Релизы</a>
+                <a href="lyrics.html">Тексты</a>
+                <a href="concerts.html">Концерты</a>
+                <a href="merch.html">Мерч</a>
+            </div>
+
+            <div class="footer__col footer__contacts">
+                <h3>Связь</h3>
+                <a href="mailto:roomtv@yandex.ru">roomtv@yandex.ru</a>
+
+                <div class="footer__socials">
+                    <a href="https://vk.com/nooneathome" target="_blank" rel="noopener">VK</a>
+                    <a href="https://t.me/+zwWmMEf_yt8xZGQy" target="_blank" rel="noopener">Telegram</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            © 2026 Не все дома
+        </div>
+    </footer>
+
+    <button class="scroll-top" type="button" aria-label="Наверх">
+        ↑
+    </button>
+
+    <script src="js/releases-data.js"></script>
+    <script src="js/lyrics.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

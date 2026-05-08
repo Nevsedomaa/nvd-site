@@ -1,0 +1,96 @@
+/* Concerts page */
+
+.header__nav a.is-active {
+    color: var(--text-main);
+}
+
+.concerts-page {
+    min-height: 856px;
+    padding: 160px 0 0;
+    background: var(--bg-dark);
+}
+
+.concerts-page__head {
+    text-align: left;
+}
+
+.concerts-page__head h1 {
+    margin-bottom: 14px;
+    color: var(--text-main);
+    font-size: var(--title-size);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+}
+
+.concerts-page__head p {
+    max-width: 760px;
+    color: var(--text-muted);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.35;
+}
+
+.concerts-page__empty {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.concerts-page__empty p {
+    color: var(--text-main);
+    font-size: 44px;
+    font-weight: 300;
+    line-height: 1.25;
+    letter-spacing: -0.03em;
+}
+
+/* Adaptive */
+
+@media (max-width: 820px) {
+    .concerts-page {
+        min-height: 760px;
+        padding: 130px 0 0;
+    }
+
+    .concerts-page__head h1 {
+        font-size: 38px;
+    }
+
+    .concerts-page__head p {
+        font-size: 18px;
+    }
+
+    .concerts-page__empty {
+        min-height: 480px;
+    }
+
+    .concerts-page__empty p {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 520px) {
+    .concerts-page {
+        min-height: 680px;
+        padding: 110px 0 0;
+    }
+
+    .concerts-page__head h1 {
+        font-size: 34px;
+    }
+
+    .concerts-page__head p {
+        font-size: 16px;
+    }
+
+    .concerts-page__empty {
+        min-height: 420px;
+    }
+
+    .concerts-page__empty p {
+        font-size: 28px;
+    }
+}
