@@ -69,6 +69,26 @@ function initHeroParallax() {
     });
 }
 
+function initHeroTitleSwap() {
+    const title = document.querySelector("[data-hero-title-swap]");
+
+    if (!title) return;
+
+    const toggleTitle = () => {
+        const isSwapped = title.classList.toggle("is-swapped");
+        title.setAttribute("aria-pressed", String(isSwapped));
+    };
+
+    title.addEventListener("click", toggleTitle);
+
+    title.addEventListener("keydown", (event) => {
+        if (event.key !== "Enter" && event.key !== " ") return;
+
+        event.preventDefault();
+        toggleTitle();
+    });
+}
+
 function initAudioButtons() {
     const buttons = document.querySelectorAll(".audio-btn");
 
@@ -153,6 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initHeader();
     initRevealAnimation();
     initHeroParallax();
+    initHeroTitleSwap();
     initAudioButtons();
     initScrollTopButton();
     disableImageDragging();

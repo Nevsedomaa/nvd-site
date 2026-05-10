@@ -367,8 +367,79 @@ a {
     font-size: 96px;
     font-weight: 700;
     line-height: 1.05;
-    letter-spacing: -0.04em;
+    letter-spacing: 0;
     margin-bottom: 24px;
+}
+
+.hero-title-swap {
+    display: inline-grid;
+    grid-template-areas: "title";
+    align-items: center;
+    justify-items: center;
+    width: min(100%, 620px);
+    min-height: 110px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.hero-title-swap__text,
+.hero-title-swap__image {
+    grid-area: title;
+    will-change: opacity, transform, filter;
+    transition:
+        opacity 0.42s ease,
+        transform 0.42s cubic-bezier(0.2, 0.8, 0.2, 1),
+        filter 0.42s ease;
+}
+
+.hero-title-swap__text {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+.hero-title-swap__image {
+    width: min(100%, 594px);
+    height: auto;
+    max-height: 110px;
+    object-fit: contain;
+    opacity: 0;
+    transform: translateY(14px) scale(0.94) rotate(-1deg);
+    filter: blur(3px) drop-shadow(0 8px 22px rgba(0, 0, 0, 0.38));
+    pointer-events: none;
+}
+
+.hero-title-swap:hover .hero-title-swap__text,
+.hero-title-swap:focus-visible .hero-title-swap__text,
+.hero-title-swap.is-swapped .hero-title-swap__text {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.96);
+    filter: blur(2px);
+}
+
+.hero-title-swap:hover .hero-title-swap__image,
+.hero-title-swap:focus-visible .hero-title-swap__image,
+.hero-title-swap.is-swapped .hero-title-swap__image {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0deg);
+    filter: blur(0) drop-shadow(0 10px 24px rgba(0, 0, 0, 0.42));
+    animation: heroTitleFloat 3.8s ease-in-out 0.42s infinite;
+}
+
+.hero-title-swap:focus-visible {
+    outline: 2px solid rgba(255, 255, 255, 0.42);
+    outline-offset: 10px;
+    border-radius: 8px;
+}
+
+@keyframes heroTitleFloat {
+    0%,
+    100% {
+        transform: translateY(0) scale(1) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-5px) scale(1.015) rotate(0.35deg);
+    }
 }
 
 .hero p {
@@ -1260,6 +1331,7 @@ a {
 
     .hero h1 {
         font-size: 54px;
+        min-height: 84px;
     }
 
     .hero p {
@@ -1388,6 +1460,7 @@ a {
 
     .hero h1 {
         font-size: 48px;
+        min-height: 74px;
     }
 
     .hero p {
