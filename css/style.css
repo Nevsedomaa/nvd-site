@@ -1098,7 +1098,7 @@ a {
     margin-bottom: 8px;
 }
 
-.merch-card img {
+.merch-card__image-link > img {
     width: 100%;
     aspect-ratio: 1.18 / 1;
     object-fit: contain;
@@ -1108,12 +1108,7 @@ a {
     transition: transform 0.25s ease;
 }
 
-.merch-card:nth-child(3) img {
-    object-fit: cover;
-    background: var(--bg-main);
-}
-
-.merch-card:hover img {
+.merch-card:hover .merch-card__image-link > img {
     transform: translateY(-2px);
 }
 
@@ -1136,15 +1131,27 @@ a {
 .merch-card__order {
     display: inline-flex;
     align-items: center;
-    gap: 4px;
+    gap: 6px;
     color: var(--text-soft);
     font-size: 12px;
     line-height: 1.2;
     transition: color 0.25s ease;
 }
 
+.merch-card__order img {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+    opacity: 0.72;
+    transition: opacity 0.25s ease;
+}
+
 .merch-card__order:hover {
     color: var(--text-main);
+}
+
+.merch-card__order:hover img {
+    opacity: 1;
 }
 
 /* Footer */

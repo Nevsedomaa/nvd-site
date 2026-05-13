@@ -4,7 +4,7 @@ window.MERCH_DATA = [
     {
         id: "black-tshirt-nvd",
         title: "Черная футболка «НВД»",
-        description: "Хлопковая футболка с цветным принтом группы.",
+        description: "Черная хлопковая футболка с цветным принтом группы.",
         price: "2500 ₽",
         images: [
             "assets/images/merch-1.jpg",
@@ -25,46 +25,35 @@ window.MERCH_DATA = [
     },
     {
         id: "mestoimenie-cd",
-        title: "CD «Местоимение»",
+        title: "CD/RW «Местоимение»",
         description: "Физическое издание альбома «Местоимение».",
-        price: "2500 ₽",
+        price: "700 ₽",
         images: [
-            "assets/images/merch-3.jpg",
-            "assets/images/merch-3.jpg",
-            "assets/images/merch-3.jpg"
+            "assets/images/merch-3 CD.jpg",
+            "assets/images/merch-3 CD.jpg",
+            "assets/images/merch-3 CD.jpg"
         ]
     },
     {
-        id: "black-tshirt-mestoimenie",
-        title: "Черная футболка «Местоимение»",
-        description: "Черная футболка с графикой нового альбома.",
-        price: "2500 ₽",
+        id: "mediator-nvd",
+        title: "Медиатор",
+        description: "Белый медиатор с логотипом группы «НВД».",
+        price: "150 ₽",
         images: [
-            "assets/images/merch-1.jpg",
-            "assets/images/merch-1.jpg",
-            "assets/images/merch-1.jpg"
+            "assets/images/merch-4 mediatr.jpg",
+            "assets/images/merch-4 mediatr.jpg",
+            "assets/images/merch-4 mediatr.jpg"
         ]
     },
     {
-        id: "white-tshirt-mestoimenie",
-        title: "Белая футболка «Местоимение»",
-        description: "Белая футболка с графикой нового альбома.",
-        price: "2500 ₽",
+        id: "mug-nvd",
+        title: "Кружка «НВД»",
+        description: "Белая кружка с цветным принтом группы.",
+        price: "800 ₽",
         images: [
-            "assets/images/merch-2.jpg",
-            "assets/images/merch-2.jpg",
-            "assets/images/merch-2.jpg"
-        ]
-    },
-    {
-        id: "zvezdnyy-dozhd-cd",
-        title: "CD «Звездный дождь»",
-        description: "Физическое издание альбома «Звездный дождь».",
-        price: "2500 ₽",
-        images: [
-            "assets/images/merch-3.jpg",
-            "assets/images/merch-3.jpg",
-            "assets/images/merch-3.jpg"
+            "assets/images/merch-5 cap.jpg",
+            "assets/images/merch-5 cap.jpg",
+            "assets/images/merch-5 cap.jpg"
         ]
     }
 ];

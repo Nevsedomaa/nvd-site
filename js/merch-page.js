@@ -33,7 +33,7 @@
     }
 
     function hasSize(product) {
-        return !/cd|disc|disk|диск/i.test(`${product.id} ${product.title}`);
+        return /tshirt|футболк/i.test(`${product.id} ${product.title}`);
     }
 
     function setError(name, message) {

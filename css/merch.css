@@ -33,7 +33,7 @@
 .merch-page__grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 44px 22px;
+    gap: 52px 22px;
     align-items: stretch;
 }
 
@@ -69,25 +69,29 @@
 
 .merch-product h2 {
     min-height: 48px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     color: var(--text-main);
     font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
+    font-weight: 700;
+    line-height: 1.18;
 }
 
 .merch-product__description {
+    display: -webkit-box;
     min-height: 42px;
-    margin-bottom: 20px;
+    margin-bottom: 28px;
+    overflow: hidden;
     color: var(--text-muted);
     font-size: 16px;
     line-height: 1.3;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
 }
 
 .merch-product__price {
     margin-bottom: 18px;
     color: var(--text-main);
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1;
 }
 
