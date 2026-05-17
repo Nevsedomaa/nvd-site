@@ -9,7 +9,7 @@ window.RELEASES_DATA = [
         "year": "2025",
         "cover": "assets/images/album-mestoimenie.jpg",
         "releaseCover": "assets/images/release-1.jpg",
-        "description": "Альбом «Местоимение» - это история о побеге из холодной повседневности в тепло летнего дня, в шелест листьев и луговых трав на легком ветру.",
+        "description": "Альбом «Местоимение» - это история о\u00A0побеге из\u00A0холодной повседневности в\u00A0тепло летнего дня, в\u00A0шелест листьев и\u00A0луговых трав на\u00A0легком ветру.",
         "services": [
             {
                 "title": "Яндекс Музыка",
@@ -112,7 +112,7 @@ window.RELEASES_DATA = [
         "year": "2024",
         "cover": "assets/images/release-3.jpg",
         "releaseCover": "assets/images/release-3.jpg",
-        "description": "Плотный городской альбом о трубах, дворах, усталости и тепле, которое приходится собирать по крупицам.",
+        "description": "Плотный городской альбом о\u00A0трубах, дворах, усталости и\u00A0тепле, которое приходится собирать по\u00A0крупицам.",
         "services": [
             {
                 "title": "Яндекс Музыка",
@@ -414,7 +414,7 @@ window.RELEASES_DATA = [
         "year": "2025",
         "cover": "assets/images/release-2.jpg",
         "releaseCover": "assets/images/release-2.jpg",
-        "description": "Короткая запись о дорогах, которые остаются внутри: о памяти мест, поздних электричках и тишине после разговора.",
+        "description": "Короткая запись о\u00A0дорогах, которые остаются внутри: о\u00A0памяти мест, поздних электричках и\u00A0тишине после разговора.",
         "services": [
             {
                 "title": "Яндекс Музыка",
@@ -539,7 +539,7 @@ window.RELEASES_DATA = [
         "year": "2023",
         "cover": "assets/images/release-4.jpg",
         "releaseCover": "assets/images/release-4.jpg",
-        "description": "Песни о ночном небе над городом, случайных встречах и желании выбраться туда, где снова можно дышать.",
+        "description": "Песни о\u00A0ночном небе над\u00A0городом, случайных встречах и\u00A0желании выбраться туда, где снова можно дышать.",
         "services": [
             {
                 "title": "Яндекс Музыка",
@@ -826,7 +826,7 @@ window.RELEASES_DATA = [
         "year": "2022",
         "cover": "assets/images/release-8.jpg",
         "releaseCover": "assets/images/release-8.jpg",
-        "description": "Осенняя запись о пустых остановках, мокром асфальте и привычке возвращаться к важному слишком поздно.",
+        "description": "Осенняя запись о\u00A0пустых остановках, мокром асфальте и\u00A0привычке возвращаться к\u00A0важному слишком поздно.",
         "services": [
             {
                 "title": "Яндекс Музыка",
@@ -962,11 +962,9 @@ window.RELEASES_DATA = [
                 "title": "Дальняя улица города",
                 "duration": "3:19",
                 "audio": "assets/audio/dalnyaya-ulitsa-goroda.mp3",
-                "lyricsExcerpt": "Строчка из песни «Дальняя улица города»",
+                "lyricsExcerpt": "Текст песни был утерян в бренности бытия",
                 "lyrics": [
-                    "Текст песни «Дальняя улица города».",
-                    "",
-                    "Замени эти строки на полный текст в js/releases-data.js."
+                    "Текст песни был утерян в бренности бытия. Мы в поиске"
                 ]
             },
             {
@@ -974,11 +972,9 @@ window.RELEASES_DATA = [
                 "title": "Путь",
                 "duration": "2:33",
                 "audio": "assets/audio/put.mp3",
-                "lyricsExcerpt": "Строчка из песни «Путь»",
+                "lyricsExcerpt": "Текст песни был утерян в бренности бытия",
                 "lyrics": [
-                    "Текст песни «Путь».",
-                    "",
-                    "Замени эти строки на полный текст в js/releases-data.js."
+                    "Текст песни был утерян в бренности бытия. Мы в поиске"
                 ]
             },
             {
@@ -1014,11 +1010,9 @@ window.RELEASES_DATA = [
                 "title": "Воспоминание прошлого",
                 "duration": "2:07",
                 "audio": "assets/audio/vospominanie-proshlogo.mp3",
-                "lyricsExcerpt": "Строчка из песни «Воспоминание прошлого»",
+                "lyricsExcerpt": "Текст песни был утерян в бренности бытия",
                 "lyrics": [
-                    "Текст песни «Воспоминание прошлого».",
-                    "",
-                    "Замени эти строки на полный текст в js/releases-data.js."
+                    "Текст песни был утерян в бренности бытия. Мы в поиске"
                 ]
             },
             {
@@ -1049,11 +1043,9 @@ window.RELEASES_DATA = [
                 "title": "Понимание",
                 "duration": "3:23",
                 "audio": "assets/audio/ponimanie.mp3",
-                "lyricsExcerpt": "Строчка из песни «Понимание»",
+                "lyricsExcerpt": "Текст песни был утерян в бренности бытия",
                 "lyrics": [
-                    "Текст песни «Понимание».",
-                    "",
-                    "Замени эти строки на полный текст в js/releases-data.js."
+                    "Текст песни был утерян в бренности бытия. Мы в поиске"
                 ]
             },
             {
@@ -1141,11 +1133,9 @@ window.RELEASES_DATA = [
                 "title": "Тучка",
                 "duration": "2:24",
                 "audio": "assets/audio/tuchka.mp3",
-                "lyricsExcerpt": "Строчка из песни «Тучка»",
+                "lyricsExcerpt": "Текст песни был утерян в бренности бытия",
                 "lyrics": [
-                    "Текст песни «Тучка».",
-                    "",
-                    "Замени эти строки на полный текст в js/releases-data.js."
+                    "Текст песни был утерян в бренности бытия. Мы в поиске"
                 ]
             }
         ]
@@ -1157,7 +1147,7 @@ window.RELEASES_DATA = [
         "year": "2023",
         "cover": "assets/images/release-5.jpg",
         "releaseCover": "assets/images/release-5.jpg",
-        "description": "Небольшая весенняя запись о первых теплых днях, тревоге перемен и длинных прогулках без маршрута.",
+        "description": "Небольшая весенняя запись о\u00A0первых теплых днях, тревоге перемен и\u00A0длинных прогулках без\u00A0маршрута.",
         "services": [
             {
                 "title": "Яндекс Музыка",
@@ -1334,7 +1324,7 @@ window.RELEASES_DATA = [
         "year": "2023",
         "cover": "assets/images/release-6.jpg",
         "releaseCover": "assets/images/release-6.jpg",
-        "description": "Сингл о простом жесте поддержки, который иногда звучит громче любых объяснений.",
+        "description": "Сингл о\u00A0простом жесте поддержки, который иногда звучит громче любых объяснений.",
         "services": [
             {
                 "title": "Яндекс Музыка",
@@ -1351,11 +1341,9 @@ window.RELEASES_DATA = [
                 "title": "Обнимать и утешать",
                 "duration": "4:15",
                 "audio": "assets/audio/obnimat-i-uteshat.mp3",
-                "lyricsExcerpt": "Тревожные мысли на фоне голых стен",
+                "lyricsExcerpt": "Текст песни был утерян в бренности бытия",
                 "lyrics": [
-                    "Текст песни «Обнимать и утешать».",
-                    "",
-                    "Замени эти строки на полный текст в js/releases-data.js."
+                    "Текст песни был утерян в бренности бытия. Мы в поиске"
                 ]
             }
         ]
@@ -1367,7 +1355,7 @@ window.RELEASES_DATA = [
         "year": "2023",
         "cover": "assets/images/release-7.jpg",
         "releaseCover": "assets/images/release-7.jpg",
-        "description": "Песня на границе светлого и печального состояния, когда чувства еще не успели выбрать сторону.",
+        "description": "Песня на\u00A0границе светлого и\u00A0печального состояния, когда чувства еще не успели выбрать сторону.",
         "services": [
             {
                 "title": "Яндекс Музыка",
@@ -1384,11 +1372,9 @@ window.RELEASES_DATA = [
                 "title": "Грусть или радость",
                 "duration": "4:08",
                 "audio": "assets/audio/grust-ili-radost.mp3",
-                "lyricsExcerpt": "Строчка из песни «Грусть или радость»",
+                "lyricsExcerpt": "Текст песни был утерян в бренности бытия",
                 "lyrics": [
-                    "Текст песни «Грусть или радость».",
-                    "",
-                    "Замени эти строки на полный текст в js/releases-data.js."
+                    "Текст песни был утерян в бренности бытия. Мы в поиске"
                 ]
             }
         ]

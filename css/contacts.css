@@ -55,19 +55,17 @@
     width: 44px;
     height: 44px;
     margin-bottom: 28px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: block;
     border-radius: 50%;
-    background: var(--accent);
-    color: var(--text-main);
     flex-shrink: 0;
 }
 
-.contact-card__icon svg {
-    width: 22px;
-    height: 22px;
+.contact-card__icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
+    border-radius: 50%;
 }
 
 .contact-card h2 {

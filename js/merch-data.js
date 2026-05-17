@@ -4,7 +4,7 @@ window.MERCH_DATA = [
     {
         id: "black-tshirt-nvd",
         title: "Черная футболка «НВД»",
-        description: "Черная хлопковая футболка с цветным принтом группы.",
+        description: "Черная хлопковая футболка с\u00A0цветным принтом группы.",
         price: "2500 ₽",
         images: [
             "assets/images/merch-1.jpg",
@@ -15,7 +15,7 @@ window.MERCH_DATA = [
     {
         id: "white-tshirt-nvd",
         title: "Белая футболка «НВД»",
-        description: "Белая футболка с цветным принтом группы.",
+        description: "Белая футболка с\u00A0цветным принтом группы.",
         price: "2500 ₽",
         images: [
             "assets/images/merch-2.jpg",
@@ -37,7 +37,7 @@ window.MERCH_DATA = [
     {
         id: "mediator-nvd",
         title: "Медиатор",
-        description: "Белый медиатор с логотипом группы «НВД».",
+        description: "Белый медиатор с\u00A0логотипом группы «НВД».",
         price: "150 ₽",
         images: [
             "assets/images/merch-4 mediatr.jpg",
@@ -48,7 +48,7 @@ window.MERCH_DATA = [
     {
         id: "mug-nvd",
         title: "Кружка «НВД»",
-        description: "Белая кружка с цветным принтом группы.",
+        description: "Белая кружка с\u00A0цветным принтом группы.",
         price: "800 ₽",
         images: [
             "assets/images/merch-5 cap.jpg",
